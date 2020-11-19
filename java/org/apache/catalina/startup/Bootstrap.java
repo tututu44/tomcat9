@@ -481,6 +481,7 @@ public final class Bootstrap {
                 daemon.stop();
             } else if (command.equals("start")) {
                 daemon.setAwait(true);
+                //load和start方法
                 daemon.load(args);
                 daemon.start();
                 if (null == daemon.getServer()) {
